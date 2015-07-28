@@ -14,8 +14,9 @@ public class ClusterConfiguration {
         return cluster;
     }
 
-    public void setCluster(DesiredConfiguration cluster) {
+    public ClusterConfiguration withCluster(DesiredConfiguration cluster) {
         this.cluster = cluster;
+        return this;
     }
 
     public class DesiredConfiguration {
@@ -27,8 +28,9 @@ public class ClusterConfiguration {
             return configuration;
         }
 
-        public void setConfiguration(Configuration configuration) {
+        public DesiredConfiguration withConfiguration(Configuration configuration) {
             this.configuration = configuration;
+            return this;
         }
     }
 }

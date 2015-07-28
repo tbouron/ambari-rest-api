@@ -25,8 +25,9 @@ public class HostComponent {
         return hostRoles;
     }
 
-    public void setHostRoles(HostRoles hostRoles) {
+    public HostComponent withHostRoles(HostRoles hostRoles) {
         this.hostRoles = hostRoles;
+        return this;
     }
 
     public class HostRoles {
@@ -47,32 +48,36 @@ public class HostComponent {
             return cluster;
         }
 
-        public void setCluster(String cluster) {
+        public HostRoles withCluster(String cluster) {
             this.cluster = cluster;
+            return this;
         }
 
         public String getHost() {
             return host;
         }
 
-        public void setHost(String host) {
+        public HostRoles withHost(String host) {
             this.host = host;
+            return this;
         }
 
         public String getComponent() {
             return component;
         }
 
-        public void setComponent(String component) {
+        public HostRoles withComponent(String component) {
             this.component = component;
+            return this;
         }
 
         public String getState() {
             return state;
         }
 
-        public void setState(String state) {
+        public HostRoles withState(String state) {
             this.state = state;
+            return this;
         }
     }
 }

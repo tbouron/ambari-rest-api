@@ -22,23 +22,26 @@ public class Configuration {
         return type;
     }
 
-    public void setType(String type) {
+    public Configuration withType(String type) {
         this.type = type;
+        return this;
     }
 
     public String getTag() {
         return tag;
     }
 
-    public void setTag(String tag) {
+    public Configuration withTag(String tag) {
         this.tag = tag;
+        return this;
     }
 
     public Map<String, String> getProperties() {
         return properties;
     }
 
-    public void setProperties(Map<String, String> properties) {
+    public Configuration withProperties(Map<String, String> properties) {
         this.properties = properties;
+        return this;
     }
 }
